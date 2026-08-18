@@ -1,0 +1,3 @@
+[submodule "bianchi-ui"]
+	path = bianchi-ui
+	url = https://github.com/vbianchidev/bianchi-ui.git
