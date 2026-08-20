@@ -12,7 +12,11 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "preserve",
+    "paths": {
+      "@bianchi-ui": ["./bianchi-ui/projects/design-system/src/public-api.ts"],
+      "@bianchi-ui/*": ["./bianchi-ui/projects/design-system/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
