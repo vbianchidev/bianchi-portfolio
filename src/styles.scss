@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// Importa todos os tokens e o CSS do tema base
+@use 'index' as bui;
+
+body {
+  @include bui.surface-background;
+  @include bui.font-sans;
+  margin: 0;
+}
