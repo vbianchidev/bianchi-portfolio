@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BuiTypewriter } from '@bianchi-ui';
 
 @Component({
   selector: 'app-home',
