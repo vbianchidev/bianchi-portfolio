@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BuiTypewriter } from '@bianchi-ui';
+import { BuiTypewriterDirective } from '@bianchi-ui';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  imports: [BuiTypewriter],
+  imports: [BuiTypewriterDirective],
 })
 export class HomeComponent {}
