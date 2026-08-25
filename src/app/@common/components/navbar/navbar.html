@@ -1,0 +1,54 @@
+<header class="navbar">
+  <div class="container navbar__content">
+    <bui-logo [width]="45" />
+
+    <span class="flex-auto"></span>
+
+    <!-- Desktop -->
+    <nav class="navbar__desktop">
+      @for (item of navbarItems; track $index) {
+        <a [href]="item.href" class="bui-button">
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+
+    <!-- Mobile -->
+    <button
+      type="button"
+      class="navbar__menu-button"
+      aria-label="Abrir menu"
+      (click)="menuOpen.set(true)"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile overlay -->
+@if (menuOpen()) {
+  <div class="navbar__overlay" [class.navbar__overlay--open]="menuOpen()">
+    <div class="navbar__mobile-menu">
+      <div class="navbar__mobile-header">
+        <bui-logo [width]="45" />
+
+        <button
+          type="button"
+          class="navbar__close-button"
+          aria-label="Fechar menu"
+          (click)="menuOpen.set(false)"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="navbar__mobile-nav">
+        @for (item of navbarItems; track $index) {
+          <a [href]="item.href" class="bui-button" (click)="menuOpen.set(false)">
+            {{ item.label }}
+          </a>
+        }
+      </nav>
+    </div>
+  </div>
+}
