@@ -2,9 +2,5 @@
 
 <main class="d-flex flex-col flex-1 items-center justify-center">
   <h1 class="display">Vitor Bianchi</h1>
-  <span class="bui-typewriter-wrapper">
-    <h1 buiTypewriter class="bui-code-inline" style="color: var(--bui-color-text)">
-      {{ 'Front-End Developer.' }}
-    </h1>
-  </span>
+  <bui-typewriter [textClass]="'bui-code-inline'">{{ 'Front-End Developer.' }}</bui-typewriter>
 </main>

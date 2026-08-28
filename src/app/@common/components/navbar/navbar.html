@@ -1,4 +1,4 @@
-<header class="navbar">
+<header class="navbar bui-container">
   <div class="container navbar__content">
     <bui-logo [width]="45" />
 
@@ -29,7 +29,7 @@
 @if (menuOpen()) {
   <div class="navbar__overlay" [class.navbar__overlay--open]="menuOpen()">
     <div class="navbar__mobile-menu">
-      <div class="navbar__mobile-header">
+      <div class="navbar__mobile-header bui-container">
         <bui-logo [width]="45" />
 
         <button
