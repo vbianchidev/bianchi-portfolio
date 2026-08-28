@@ -1,12 +1,12 @@
 <header class="navbar bui-container">
   <div class="container navbar__content">
-    <bui-logo [width]="48" />
+    <bui-logo [height]="48" />
 
     <span class="flex-auto"></span>
 
     <nav class="navbar__desktop">
       @for (item of navbarItems; track $index) {
-        <a [href]="item.href" class="bui-button">
+        <a [routerLink]="item.href" [routerLinkActive]="'active'" class="bui-button">
           {{ item.label }}
         </a>
       }
@@ -28,7 +28,7 @@
   <div class="navbar__overlay" [class.navbar__overlay--open]="menuOpen()">
     <div class="navbar__mobile-menu">
       <div class="navbar__mobile-header bui-container">
-        <bui-logo [width]="48" />
+        <bui-logo [height]="48" />
 
         <button
           type="button"

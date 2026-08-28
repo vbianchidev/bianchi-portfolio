@@ -23,8 +23,12 @@
       margin-left: auto;
 
       .bui-button {
+        color: var(--bui-color-text) !important;
+        &.active {
+          color: var(--bui-color-text-accent) !important;
+        }
         &:hover {
-          color: var(--bui-color-text) !important;
+          color: var(--bui-color-text-accent) !important;
         }
       }
     }
@@ -39,10 +43,10 @@
       font-size: 1.5rem;
       cursor: pointer;
 
-      color: var(--bui-color-text-accent);
+      color: var(--bui-color-text);
 
       &:hover {
-        color: var(--bui-color-text) !important;
+        color: var(--bui-color-text-accent) !important;
       }
     }
 
@@ -76,10 +80,10 @@
       font-size: 1.5rem;
       cursor: pointer;
       border-radius: 0.5rem;
-      color: var(--bui-color-text-accent);
+      color: var(--bui-color-text);
 
       &:hover {
-        color: var(--bui-color-text) !important;
+        color: var(--bui-color-text-accent) !important;
       }
     }
 
@@ -94,7 +98,7 @@
         text-align: center;
         font-size: 2rem !important;
         &:hover {
-          color: var(--bui-color-text) !important;
+          color: var(--bui-color-text-accent) !important;
         }
       }
     }

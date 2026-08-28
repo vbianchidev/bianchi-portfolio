@@ -1,4 +1,15 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { DefaultLayout } from './@common/layout/default-layout';
+import { About } from './about/about';
+import { Home } from './home/home';
 
-export const routes: Routes = [{ path: '', component: HomeComponent }];
+export const routes: Routes = [
+  {
+    path: '',
+    component: DefaultLayout,
+    children: [
+      { path: '', component: Home },
+      { path: 'about', component: About },
+    ],
+  },
+];

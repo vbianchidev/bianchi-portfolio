@@ -1,7 +1,7 @@
 :host {
   display: inline-flex;
 
-  .dark-mode {
+  button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -11,10 +11,18 @@
     cursor: pointer;
     border-radius: 99rem;
     border: 1px solid var(--bui-color-text);
+
+    &:hover {
+      color: var(--bui-color-text-accent) !important;
+    }
   }
 
   .icon {
     font-size: 0.875rem;
-    color: var(--bui-color-text-accent);
+    color: var(--bui-color-text);
+
+    &:hover {
+      color: var(--bui-color-text-accent) !important;
+    }
   }
 }
