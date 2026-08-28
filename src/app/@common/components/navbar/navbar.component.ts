@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { BuiLogo } from '@bianchi-ui';
+import { SwitchThemeComponent } from '../switch-theme/switch-theme.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [BuiLogo],
-  templateUrl: './navbar.html',
-  styleUrl: './navbar.scss',
+  imports: [BuiLogo, SwitchThemeComponent],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
 })
-export class Navbar {
+export class NavbarComponent {
   protected readonly menuOpen = signal(false);
 
   protected readonly navbarItems = [
