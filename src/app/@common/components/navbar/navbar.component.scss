@@ -21,6 +21,12 @@
       align-items: center;
       gap: 1rem;
       margin-left: auto;
+
+      .bui-button {
+        &:hover {
+          color: var(--bui-color-text) !important;
+        }
+      }
     }
 
     &__menu-button {

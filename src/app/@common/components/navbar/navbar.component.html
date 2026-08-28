@@ -4,7 +4,6 @@
 
     <span class="flex-auto"></span>
 
-    <!-- Desktop -->
     <nav class="navbar__desktop">
       @for (item of navbarItems; track $index) {
         <a [href]="item.href" class="bui-button">
@@ -14,7 +13,6 @@
       <app-switch-theme></app-switch-theme>
     </nav>
 
-    <!-- Mobile -->
     <button
       type="button"
       class="navbar__menu-button"
@@ -26,12 +24,11 @@
   </div>
 </header>
 
-<!-- Mobile overlay -->
 @if (menuOpen()) {
   <div class="navbar__overlay" [class.navbar__overlay--open]="menuOpen()">
     <div class="navbar__mobile-menu">
       <div class="navbar__mobile-header bui-container">
-        <bui-logo [width]="45" />
+        <bui-logo [width]="48" />
 
         <button
           type="button"
