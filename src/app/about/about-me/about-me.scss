@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .about-me {
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 'Avatar Bio';
+
+    gap: 2rem;
+
+    .avatar {
+      grid-area: Avatar;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-color: var(--bui-color-primary);
+      border: 2px solid var(--bui-color-primary);
+    }
+
+    .bio {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--bui-color-text);
+    }
+
+    .contact {
+      grid-area: Bio;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+
+      strong {
+        color: var(--bui-color-text-accent);
+        &::after {
+          content: ': ';
+        }
+      }
+
+      .name {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .age {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .email {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .phone {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
+  }
+}

@@ -6,7 +6,12 @@
 
     <nav class="navbar__desktop">
       @for (item of navbarItems; track $index) {
-        <a [routerLink]="item.href" [routerLinkActive]="'active'" class="bui-button">
+        <a
+          class="bui-button"
+          [routerLink]="item.href"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
           {{ item.label }}
         </a>
       }

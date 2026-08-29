@@ -7,7 +7,7 @@ import { NavbarComponent } from '../components';
   template: `
     <app-navbar />
 
-    <main class="d-flex flex-col flex-1 items-center justify-center">
+    <main class="d-flex flex-col flex-1 items-center justify-center bui-container">
       <router-outlet />
     </main>
   `,
