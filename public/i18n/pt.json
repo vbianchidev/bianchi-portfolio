@@ -26,5 +26,10 @@
       "EMAIL": "vitor.biansil@gmail.com",
       "PHONE": "+55 (17) 99781-7534"
     }
+  },
+
+  "ABOUT-SKILLS": {
+    "TITLE": "Some technical skills that <br /> I have",
+    "SECTION-NAME": "Skills"
   }
 }

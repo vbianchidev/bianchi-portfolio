@@ -1,0 +1,12 @@
+<section class="bui-section bui-container">
+  <app-section-title
+    [title]="'ABOUT-SKILLS.TITLE' | translate"
+    [sectionName]="'ABOUT-SKILLS.SECTION-NAME' | translate"
+  ></app-section-title>
+
+  <div class="d-flex flex-wrap gap-3">
+    @for (skill of skills; track $index) {
+      <span class="bui-chip bui-code-inline">{{ skill }}</span>
+    }
+  </div>
+</section>
