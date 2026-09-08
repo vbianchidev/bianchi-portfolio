@@ -12,8 +12,9 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
-      padding-bottom: 1rem;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
     }
 
     &__desktop {
@@ -61,7 +62,7 @@
 
     &__mobile-menu {
       min-height: calc(100vh - 3rem);
-      padding: 1.5rem;
+      padding: 2rem 0;
     }
 
     &__mobile-header {
@@ -91,12 +92,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2.5rem;
+      gap: 1.2rem;
 
       .bui-button {
         width: 100%;
         text-align: center;
         font-size: 2rem !important;
+        padding: 1rem 0 !important;
         &:hover {
           color: var(--bui-color-text-accent) !important;
         }
