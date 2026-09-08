@@ -1,9 +1,13 @@
 @use 'index' as bui;
 
 :host {
-  padding: 3rem 0;
   text-align: center;
-  min-height: 280px;
   justify-content: center;
+
   @include bui.flex-column;
+
+  section {
+    @include bui.container();
+    gap: 0;
+  }
 }

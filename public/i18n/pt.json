@@ -10,14 +10,16 @@
     "TITLE": "Sou Vitor Bianchi",
     "SUBTITLE": "Engenheiro de Software Frontend."
   },
+
   "ABOUT": {
     "TITLE": "Sobre",
     "SUBTITLE": "Um pouco sobre minha trajetória."
   },
 
   "ABOUT-ME": {
-    "TITLE": "Sobre",
-    "BIO": "Desenvolvedor Frontend com 7 anos de experiência em produtos SaaS, especializado em Angular, TypeScript e Design Systems corporativos. Liderança na criação de Design System baseado em Material Design — da prototipação em Figma à biblioteca de componentes reutilizáveis — aplicado em produtos para os setores de varejo e radiodifusão. Experiência em modernização de código legado, migração de versões do Angular (v8 a v19), performance de interfaces e reatividade com RxJS e Signals. Atuação em integrações REST API e SignalR, ambientes cloud (AWS, Azure) e colaboração direta com backend na definição de contratos técnicos, code review e ritos ágeis (Scrum).",
+    "TITLE": "Get to know a little <br /> about me.",
+    "SECTION-NAME": "Sobre mim",
+    "BIO": "Sou Desenvolvedor Frontend com mais de 7 anos de experiência no desenvolvimento de soluções de softwares escaláveis e de alto impacto para empresas do mercado brasileiro e internacional, com especialização no ecossistema Angular. Minha experiência também se estende a Node.JS, Design Systems, i18n, Pixel Perfect, Micro Frontend, Core Web Vitals entre outros conceitos de frontend e UI/UX, o que me permite criar aplicações mais robustas e alinha a necessidades de negócio complexas.",
     "CONTACT": {
       "NAME": "Vitor Bianchi da Silva",
       "AGE": "27 Anos",

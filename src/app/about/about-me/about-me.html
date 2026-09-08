@@ -1,40 +1,46 @@
-<h2>{{ 'ABOUT-ME.TITLE' | translate }}</h2>
+<section class="bui-section">
+  <app-section-title
+    [title]="'ABOUT-ME.TITLE' | translate"
+    [sectionName]="'ABOUT-ME.SECTION-NAME' | translate"
+  ></app-section-title>
 
-<section class="about-me">
-  <img class="avatar" alt="avatar" [src]="'https://github.com/vbianchidev.png'" />
-  <div class="bio">
-    <span>{{ 'ABOUT-ME.BIO' | translate }}</span>
-    <div class="contact">
-      <span>
-        <strong>{{ 'COMMON.NAME' | translate }}</strong>
-        {{ 'ABOUT-ME.CONTACT.NAME' | translate }}
-      </span>
+  <div class="abbout-me">
+    <img class="bui-avatar" alt="avatar" [src]="'https://github.com/vbianchidev.png'" />
 
-      <span>
-        <strong>{{ 'COMMON.AGE' | translate }}</strong>
-        {{ 'ABOUT-ME.CONTACT.AGE' | translate }}
-      </span>
+    <div class="bio">
+      <span>{{ 'ABOUT-ME.BIO' | translate }}</span>
+      <div class="contact">
+        <span>
+          <strong>{{ 'COMMON.NAME' | translate }}</strong>
+          {{ 'ABOUT-ME.CONTACT.NAME' | translate }}
+        </span>
 
-      <span>
-        <strong>{{ 'COMMON.EMAIL' | translate }}</strong>
-        {{ 'ABOUT-ME.CONTACT.EMAIL' | translate }}
-      </span>
+        <span>
+          <strong>{{ 'COMMON.AGE' | translate }}</strong>
+          {{ 'ABOUT-ME.CONTACT.AGE' | translate }}
+        </span>
 
-      <span>
-        <strong>{{ 'COMMON.PHONE' | translate }}</strong>
-        {{ 'ABOUT-ME.CONTACT.PHONE' | translate }}
-      </span>
-    </div>
+        <span>
+          <strong>{{ 'COMMON.EMAIL' | translate }}</strong>
+          {{ 'ABOUT-ME.CONTACT.EMAIL' | translate }}
+        </span>
 
-    <div class="d-flex gap-2">
-      <button class="bui-button-outline primary">
-        <span class="fa fa-brands fa-linkedin"></span>
-        <span>LinkedIn</span>
-      </button>
-      <button class="bui-button-outline primary">
-        <span class="fa fa-brands fa-github"></span>
-        <span>Github</span>
-      </button>
+        <span>
+          <strong>{{ 'COMMON.PHONE' | translate }}</strong>
+          {{ 'ABOUT-ME.CONTACT.PHONE' | translate }}
+        </span>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button class="bui-button-outline primary">
+          <span class="fa fa-brands fa-linkedin"></span>
+          <span>LinkedIn</span>
+        </button>
+        <button class="bui-button-outline primary">
+          <span class="fa fa-brands fa-github"></span>
+          <span>Github</span>
+        </button>
+      </div>
     </div>
   </div>
 </section>

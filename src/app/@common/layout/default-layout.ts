@@ -7,17 +7,15 @@ import { NavbarComponent } from '../components';
   template: `
     <app-navbar />
 
-    <main class="d-flex flex-col flex-1 items-center justify-center bui-container">
+    <main class="d-flex flex-col flex-1 items-center justify-center">
       <router-outlet />
     </main>
   `,
   styles: [
     `
       :host {
-        padding: 1.5rem;
         display: flex;
         flex-direction: column;
-
         main {
           contain: layout;
         }

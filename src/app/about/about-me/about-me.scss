@@ -1,28 +1,29 @@
+@use 'index' as bui;
+
 :host {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  .about-me {
+  display: inline-block;
+  width: 100dvw !important;
+  background-color: var(--bui-color-container);
+
+  section {
+    @include bui.container();
+  }
+
+  .abbout-me {
     display: grid;
-    grid-template-columns: 5em 1fr;
+    grid-template-columns: 8rem 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 1.5rem;
     grid-template-areas: 'Avatar Bio';
 
-    gap: 2rem;
-
-    .avatar {
+    .bui-avatar {
       grid-area: Avatar;
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
-      background-color: var(--bui-color-primary);
-      border: 2px solid var(--bui-color-primary);
     }
 
     .bio {
       display: flex;
       flex-direction: column;
+      text-align: justify;
       gap: 2rem;
       color: var(--bui-color-text);
     }
@@ -30,8 +31,7 @@
     .contact {
       grid-area: Bio;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-column-gap: 0.5rem;
       grid-row-gap: 0.5rem;
 
@@ -45,12 +45,15 @@
       .name {
         grid-area: 1 / 1 / 2 / 2;
       }
+
       .age {
         grid-area: 1 / 2 / 2 / 3;
       }
+
       .email {
         grid-area: 2 / 1 / 3 / 2;
       }
+
       .phone {
         grid-area: 2 / 2 / 3 / 3;
       }
