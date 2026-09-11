@@ -1,0 +1,38 @@
+@use 'index' as bui;
+
+:host {
+  display: inline-block;
+  width: 100dvw !important;
+  background-color: var(--bui-color-container);
+
+  section {
+    @include bui.container();
+  }
+
+  .experiences {
+    .experience {
+      h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        color: var(--bui-color-primary);
+        &::after {
+          content: '/ ';
+        }
+      }
+
+      strong {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+      }
+    }
+
+    .date {
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+      font-weight: 300;
+      color: var(--bui-color-text);
+    }
+  }
+}
