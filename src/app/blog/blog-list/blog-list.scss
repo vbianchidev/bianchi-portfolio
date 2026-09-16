@@ -1,0 +1,54 @@
+@use 'index' as bui;
+
+:host {
+  display: block;
+
+  #blog-list-display {
+    @include bui.container();
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+  }
+}
+
+.blog-list {
+  &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: var(--bui-color-text-accent);
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      outline: 2px solid var(--bui-color-primary);
+      outline-offset: 2px;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+    p,
+    &__date {
+      color: var(--bui-color-text);
+    }
+  }
+
+  &__date {
+    font-size: 0.875rem;
+  }
+  &__read-more {
+    color: var(--bui-color-primary);
+    font-weight: 600;
+  }
+  &__message {
+    color: var(--bui-color-text-accent);
+  }
+}

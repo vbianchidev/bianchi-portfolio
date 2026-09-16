@@ -1,0 +1,28 @@
+<section id="blog-list-display" class="bui-section">
+  <h1 class="display">{{ 'BLOG.TITLE' | translate }}</h1>
+  <bui-typewriter [textClass]="'bui-code-inline'">{{ 'BLOG.SUBTITLE' | translate }}</bui-typewriter>
+</section>
+
+<section id="blog-list" class="bui-section bui-container">
+  @if (loading()) {
+    <p class="blog-list__message" role="status">{{ 'BLOG.LOADING' | translate }}</p>
+  } @else if (hasError()) {
+    <p class="blog-list__message" role="alert">{{ 'BLOG.ERROR' | translate }}</p>
+  } @else {
+    <div class="blog-list__posts">
+      @for (post of posts(); track post.id) {
+        <a class="bui-card blog-list__post" [routerLink]="['/blog', post.id]">
+          <span class="blog-list__date">{{ post.publishedAt | date: 'longDate' }}</span>
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.excerpt }}</p>
+          <span class="blog-list__read-more">
+            {{ 'BLOG.READ-ARTICLE' | translate }}
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      } @empty {
+        <p class="blog-list__message">{{ 'BLOG.EMPTY' | translate }}</p>
+      }
+    </div>
+  }
+</section>

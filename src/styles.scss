@@ -1,5 +1,6 @@
 // Importa todos os tokens e o CSS do tema base
 @use 'index' as bui;
+@import 'highlight.js/styles/github.css';
 
 h1 {
   margin: 0;

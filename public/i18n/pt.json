@@ -133,5 +133,17 @@
     "SECTION-NAME": "Figma",
     "EMPTY": "Os projetos do Figma estarão disponíveis em breve.",
     "OPEN-FIGMA": "Abrir no Figma"
+  },
+
+  "BLOG": {
+    "TITLE": "Blog",
+    "SUBTITLE": "Notas sobre tecnologia, interfaces e construção de produtos.",
+    "ARTICLES": "Artigos",
+    "LOADING": "Carregando artigos...",
+    "LOADING-ARTICLE": "Carregando artigo...",
+    "ERROR": "Não foi possível carregar o conteúdo do blog neste momento.",
+    "EMPTY": "Nenhum artigo publicado ainda.",
+    "READ-ARTICLE": "Ler artigo",
+    "BACK-TO-LIST": "Voltar aos artigos"
   }
 }

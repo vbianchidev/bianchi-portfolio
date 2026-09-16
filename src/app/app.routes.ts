@@ -16,6 +16,14 @@ export const routes: Routes = [
         path: 'portfolio',
         loadComponent: () => import('./portfolio/portfolio').then((module) => module.Portfolio),
       },
+      {
+        path: 'blog',
+        loadComponent: () => import('./blog/blog-list/blog-list').then((module) => module.BlogList),
+      },
+      {
+        path: 'blog/:id',
+        loadComponent: () => import('./blog/blog-post/blog-post').then((module) => module.BlogPost),
+      },
     ],
   },
   { path: '**', redirectTo: '' },

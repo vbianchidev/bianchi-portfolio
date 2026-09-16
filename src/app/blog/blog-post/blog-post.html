@@ -1,0 +1,22 @@
+<section id="blog-post" class="bui-section bui-container">
+  @if (loading()) {
+    <p class="blog-post__message" role="status">{{ 'BLOG.LOADING-ARTICLE' | translate }}</p>
+  } @else if (hasError()) {
+    <p class="blog-post__message" role="alert">{{ 'BLOG.ERROR' | translate }}</p>
+  } @else if (post(); as selectedPost) {
+    <header class="blog-post__header">
+      <span>{{ selectedPost.publishedAt | date: 'longDate' }}</span>
+      <h1>{{ selectedPost.title }}</h1>
+      <p>{{ selectedPost.excerpt }}</p>
+    </header>
+
+    <article class="bui-card blog-content">
+      <div [innerHTML]="content()"></div>
+    </article>
+  }
+
+  <a class="bui-button-outline primary blog-post__back" routerLink="/blog">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+    {{ 'BLOG.BACK-TO-LIST' | translate }}
+  </a>
+</section>
