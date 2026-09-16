@@ -18,5 +18,6 @@ export class NavbarComponent {
     { label: this.translate.instant('Home'), href: '/' },
     { label: this.translate.instant('About'), href: '/about' },
     { label: this.translate.instant('Portfolio'), href: '/portfolio' },
+    { label: this.translate.instant('Blog'), href: '/blog' },
   ];
 }
