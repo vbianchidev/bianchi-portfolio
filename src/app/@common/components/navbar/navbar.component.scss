@@ -6,6 +6,7 @@
 
   .navbar {
     width: 100%;
+    @include bui.container();
 
     &__content {
       display: flex;

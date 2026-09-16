@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { SectionTitleComponent } from '../../@common/components/section-title/section-title.component';
 
 @Component({
@@ -8,6 +8,14 @@ import { SectionTitleComponent } from '../../@common/components/section-title/se
   styleUrl: './about-skills.scss',
   imports: [SectionTitleComponent, TranslatePipe],
 })
-export class AboutSkills {
-  skills = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS', 'Git', 'GitHub', 'Figma'];
+export class AboutSkills implements OnInit {
+  private translate = inject(TranslateService);
+
+  protected skills = signal<string[]>([]);
+
+  ngOnInit(): void {
+    this.translate.get('ABOUT-SKILLS.SKILLS').subscribe((skills: string[]) => {
+      this.skills.set(skills);
+    });
+  }
 }

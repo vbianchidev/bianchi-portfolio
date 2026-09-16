@@ -5,12 +5,10 @@
   ></app-section-title>
 
   <div class="experiences d-flex flex-col gap-4">
-    @for (experience of experiences; track $index) {
+    @for (experience of experiences(); track $index) {
       <div class="experience d-flex flex-col gap-1">
         <div class="d-flex gap-2 align-items-baseline">
-          <h3>
-            {{ experience.company }}
-          </h3>
+          <h3>{{ experience.company }}</h3>
           <strong>{{ experience.role }}</strong>
         </div>
 

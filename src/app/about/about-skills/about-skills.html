@@ -5,7 +5,7 @@
   ></app-section-title>
 
   <div class="d-flex flex-wrap gap-3">
-    @for (skill of skills; track $index) {
+    @for (skill of skills(); track $index) {
       <span class="bui-chip bui-code-inline">{{ skill }}</span>
     }
   </div>

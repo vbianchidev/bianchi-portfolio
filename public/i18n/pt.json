@@ -16,8 +16,70 @@
     "SUBTITLE": "Um pouco sobre minha trajetória."
   },
 
+  "ABOUT-EXPERIENCE": {
+    "TITLE": "Explore minha jornada <br /> como desenvolvedor.",
+    "SECTION-NAME": "Experiências",
+    "EXPERIENCES": [
+      {
+        "company": "Desenvolvedor Frontend (Angular)",
+        "role": "Selbetti Tecnologia",
+        "startDate": "01-06-2024",
+        "endDate": "01-06-2026"
+      },
+      {
+        "company": "Desenvolvedor Frontend (Angular)",
+        "role": "Informa Solutions",
+        "startDate": "01-04-2022",
+        "endDate": "01-06-2024"
+      },
+      {
+        "company": "Desenvolvedor Fullstack (.NET / Angular)",
+        "role": "Integrativa",
+        "startDate": "01-06-2021",
+        "endDate": "01-04-2022"
+      },
+      {
+        "company": "Desenvolvedor Fullstack (PHP)",
+        "role": "Maquina Web",
+        "startDate": "01-10-2018",
+        "endDate": "01-06-2021"
+      }
+    ]
+  },
+
+  "ABOUT-EDUCATION": {
+    "TITLE": "Conhecimento que <br /> sustenta a prática.",
+    "SECTION-NAME": "Formação",
+    "EDUCATIONS": [
+      {
+        "degree": "Pós-graduação Lato Sensu em Engenharia de Software com Ênfase em Qualidade e Teste de Software",
+        "institution": "Anhanguera Educacional",
+        "startDate": "01-09-2023",
+        "endDate": "01-11-2022"
+      },
+      {
+        "degree": "Pós-graduação Lato Sensu em Arquitetura de Software",
+        "institution": "Anhanguera Educacional",
+        "startDate": "01-09-2023",
+        "endDate": "01-11-2022"
+      },
+      {
+        "degree": "Curso Superior Tecnólogo de Análise e Desenvolvimento de Sistemas",
+        "institution": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
+        "startDate": "01-01-2017",
+        "endDate": "01-12-2021"
+      },
+      {
+        "degree": "Curso Técnico Integrado de Redes de Computadores",
+        "institution": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
+        "startDate": "01-01-2014",
+        "endDate": "01-12-2016"
+      }
+    ]
+  },
+
   "ABOUT-ME": {
-    "TITLE": "Get to know a little <br /> about me.",
+    "TITLE": "Conheça um pouco <br /> sobre mim.",
     "SECTION-NAME": "Sobre mim",
     "BIO": "Olá, me chamo Vitor Bianchi da Silva. Sou Desenvolvedor Frontend com mais de 7 anos de experiência no desenvolvimento de soluções de softwares escaláveis e de alto impacto para empresas do mercado brasileiro e internacional, com especialização no ecossistema Angular.",
     "CONTACT": {
@@ -29,12 +91,24 @@
   },
 
   "ABOUT-SKILLS": {
-    "TITLE": "Some technical skills <br /> that I have",
-    "SECTION-NAME": "Skills"
-  },
-
-  "ABOUT-EXPERIENCE": {
-    "TITLE": "Explore my developer <br /> journey.",
-    "SECTION-NAME": "Experiências"
+    "TITLE": "Um pouco das minhas <br /> habilidades técnicas.",
+    "SECTION-NAME": "Habilidades Técnicas",
+    "SKILLS": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Node.JS",
+      "RxJS",
+      "NgRX",
+      "NgXS",
+      "HTML/HTML5",
+      "CSS/CSS3",
+      "SASS",
+      "Jasmine",
+      "Jest",
+      "AWS",
+      "Azure",
+      "Figmas"
+    ]
   }
 }

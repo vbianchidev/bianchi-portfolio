@@ -16,6 +16,8 @@ import { NavbarComponent } from '../components';
       :host {
         display: flex;
         flex-direction: column;
+        min-height: 100dvh;
+
         main {
           contain: layout;
         }

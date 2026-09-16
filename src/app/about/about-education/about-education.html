@@ -1,0 +1,19 @@
+<section id="about-education" class="bui-section">
+  <app-section-title
+    [title]="'ABOUT-EDUCATION.TITLE' | translate"
+    [sectionName]="'ABOUT-EDUCATION.SECTION-NAME' | translate"
+  ></app-section-title>
+
+  <div class="educations d-flex flex-col gap-4">
+    @for (education of educations(); track $index) {
+      <div class="education d-flex flex-col gap-1">
+        <h3>{{ education.institution }}</h3>
+        <strong>{{ education.degree }}</strong>
+        <p class="date">
+          {{ education.startDate | date: 'MMM yyyy' }} -
+          {{ education.endDate | date: 'MMM yyyy' }}
+        </p>
+      </div>
+    }
+  </div>
+</section>

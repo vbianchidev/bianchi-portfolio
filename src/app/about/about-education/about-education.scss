@@ -3,14 +3,13 @@
 :host {
   display: inline-block;
   width: 100dvw !important;
-  background-color: var(--bui-color-container);
 
   section {
     @include bui.container();
   }
 
-  .experiences {
-    .experience {
+  .educations {
+    .education {
       h3 {
         font-size: 1.5rem;
         line-height: 1.5rem;

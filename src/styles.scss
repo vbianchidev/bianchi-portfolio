@@ -5,10 +5,16 @@ h1 {
   margin: 0;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   @include bui.surface-background;
   @include bui.font-sans;
   margin: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 .display {
