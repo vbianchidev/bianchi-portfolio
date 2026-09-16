@@ -1,4 +1,4 @@
-<section id="about-me" class="bui-section">
+<section id="about-experience" class="bui-section">
   <app-section-title
     [title]="'ABOUT-EXPERIENCE.TITLE' | translate"
     [sectionName]="'ABOUT-EXPERIENCE.SECTION-NAME' | translate"
@@ -7,10 +7,8 @@
   <div class="experiences d-flex flex-col gap-4">
     @for (experience of experiences(); track $index) {
       <div class="experience d-flex flex-col gap-1">
-        <div class="d-flex gap-2 align-items-baseline">
-          <h3>{{ experience.company }}</h3>
-          <strong>{{ experience.role }}</strong>
-        </div>
+        <h3>{{ experience.company }}</h3>
+        <strong>{{ experience.role }}</strong>
 
         <p class="date">
           {{ experience.startDate | date: 'MMM yyyy' }} -
