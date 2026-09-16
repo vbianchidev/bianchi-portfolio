@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { DefaultLayout } from './@common/layout/default-layout';
-import { About } from './about/about';
 import { Home } from './home/home';
 
 export const routes: Routes = [
@@ -9,7 +8,14 @@ export const routes: Routes = [
     component: DefaultLayout,
     children: [
       { path: '', component: Home },
-      { path: 'about', component: About },
+      {
+        path: 'about',
+        loadComponent: () => import('./about/about').then((module) => module.About),
+      },
+      {
+        path: 'portfolio',
+        loadComponent: () => import('./portfolio/portfolio').then((module) => module.Portfolio),
+      },
     ],
   },
   { path: '**', redirectTo: '' },

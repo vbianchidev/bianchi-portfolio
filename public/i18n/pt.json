@@ -110,5 +110,28 @@
       "Azure",
       "Figmas"
     ]
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfólio",
+    "SUBTITLE": "Projetos e experiências que transformam ideias em produtos."
+  },
+
+  "PORTFOLIO-GITHUB": {
+    "TITLE": "Repositórios que refletem <br /> minha prática em desenvolvimento.",
+    "SECTION-NAME": "GitHub",
+    "LOADING": "Carregando repositórios...",
+    "ERROR": "Não foi possível carregar os repositórios neste momento.",
+    "EMPTY": "Nenhum repositório público encontrado.",
+    "NO-DESCRIPTION": "Este repositório não possui descrição.",
+    "VIEW-REPOSITORY": "Ver repositório",
+    "VIEW-PROJECT": "Ver projeto"
+  },
+
+  "PORTFOLIO-FIGMA": {
+    "TITLE": "Interfaces que combinam <br /> clareza, intenção e experiência.",
+    "SECTION-NAME": "Figma",
+    "EMPTY": "Os projetos do Figma estarão disponíveis em breve.",
+    "OPEN-FIGMA": "Abrir no Figma"
   }
 }

@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  background-color: var(--bui-color-container);
+
+  .repository-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+  }
+
+  .repository-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    h3,
+    p {
+      margin: 0;
+    }
+    h3 {
+      color: var(--bui-color-text-accent);
+    }
+    p,
+    .repository-card__meta {
+      color: var(--bui-color-text-accent);
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+
+    &__meta,
+    &__actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+  }
+
+  .portfolio-message {
+    color: var(--bui-color-text-accent);
+  }
+}

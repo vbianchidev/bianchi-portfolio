@@ -1,0 +1,37 @@
+<section id="portfolio-github" class="bui-section bui-container">
+  <app-section-title
+    [title]="'PORTFOLIO-GITHUB.TITLE' | translate"
+    [sectionName]="'PORTFOLIO-GITHUB.SECTION-NAME' | translate"
+  />
+
+  @if (loading()) {
+    <p class="portfolio-message" role="status">{{ 'PORTFOLIO-GITHUB.LOADING' | translate }}</p>
+  } @else if (hasError()) {
+    <p class="portfolio-message" role="alert">{{ 'PORTFOLIO-GITHUB.ERROR' | translate }}</p>
+  } @else {
+    <div class="repository-list">
+      @for (repository of repositories(); track repository.id) {
+        <article class="bui-card repository-card">
+          <div>
+            <h3>{{ repository.name }}</h3>
+            <p>{{ repository.description || ('PORTFOLIO-GITHUB.NO-DESCRIPTION' | translate) }}</p>
+          </div>
+
+          <div class="repository-card__actions">
+            <a
+              class="bui-button-outline primary"
+              [href]="repository.html_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ 'PORTFOLIO-GITHUB.VIEW-REPOSITORY' | translate }}
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      } @empty {
+        <p class="portfolio-message">{{ 'PORTFOLIO-GITHUB.EMPTY' | translate }}</p>
+      }
+    </div>
+  }
+</section>

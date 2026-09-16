@@ -1,0 +1,35 @@
+<section id="portfolio-figma" class="bui-section bui-container">
+  <app-section-title
+    [title]="'PORTFOLIO-FIGMA.TITLE' | translate"
+    [sectionName]="'PORTFOLIO-FIGMA.SECTION-NAME' | translate"
+  />
+
+  <div class="figma-projects">
+    @for (project of embeddedProjects; track project.fileUrl) {
+      <article class="bui-card figma-project">
+        <div>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+        </div>
+        <iframe
+          class="figma-project__embed"
+          [src]="project.embedUrl"
+          [title]="project.title"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <a
+          class="bui-button-outline primary"
+          [href]="project.fileUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ 'PORTFOLIO-FIGMA.OPEN-FIGMA' | translate }}
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </article>
+    } @empty {
+      <p class="portfolio-message">{{ 'PORTFOLIO-FIGMA.EMPTY' | translate }}</p>
+    }
+  </div>
+</section>

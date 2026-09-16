@@ -1,0 +1,12 @@
+@use 'index' as bui;
+
+:host {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  section {
+    @include bui.container();
+    gap: 0;
+  }
+}

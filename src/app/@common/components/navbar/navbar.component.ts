@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { BuiLogo } from '@bianchi-ui';
+import { TranslateService } from '@ngx-translate/core';
 import { SwitchThemeComponent } from '../switch-theme/switch-theme.component';
 
 @Component({
@@ -10,12 +11,12 @@ import { SwitchThemeComponent } from '../switch-theme/switch-theme.component';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+  private readonly translate = inject(TranslateService);
   protected readonly menuOpen = signal(false);
 
   protected readonly navbarItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Contact', href: '/contact' },
+    { label: this.translate.instant('Home'), href: '/' },
+    { label: this.translate.instant('About'), href: '/about' },
+    { label: this.translate.instant('Portfolio'), href: '/portfolio' },
   ];
 }
