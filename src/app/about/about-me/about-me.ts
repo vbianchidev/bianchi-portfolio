@@ -8,4 +8,11 @@ import { SectionTitleComponent } from '../../@common/components/section-title/se
   imports: [TranslatePipe, SectionTitleComponent],
   styleUrl: './about-me.scss',
 })
-export class AboutMe {}
+export class AboutMe {
+  public downloadResume(): void {
+    const link = document.createElement('a');
+    link.href = 'vitor-bianchi-resume.pdf';
+    link.download = 'vitor-bianchi-resume.pdf';
+    link.click();
+  }
+}
