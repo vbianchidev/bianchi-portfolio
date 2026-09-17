@@ -47,7 +47,13 @@
 
       <nav class="navbar__mobile-nav">
         @for (item of navbarItems; track $index) {
-          <a [href]="item.href" class="bui-button" (click)="menuOpen.set(false)">
+          <a
+            class="bui-button"
+            [routerLink]="item.href"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="menuOpen.set(false)"
+          >
             {{ item.label }}
           </a>
         }

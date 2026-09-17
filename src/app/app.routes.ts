@@ -1,6 +1,10 @@
 import { Routes } from '@angular/router';
 import { DefaultLayout } from './@common/layout/default-layout';
+import { About } from './about/about';
+import { BlogList } from './blog/blog-list/blog-list';
+import { BlogPost } from './blog/blog-post/blog-post';
 import { Home } from './home/home';
+import { Portfolio } from './portfolio/portfolio';
 
 export const routes: Routes = [
   {
@@ -10,19 +14,19 @@ export const routes: Routes = [
       { path: '', component: Home },
       {
         path: 'about',
-        loadComponent: () => import('./about/about').then((module) => module.About),
+        component: About,
       },
       {
         path: 'portfolio',
-        loadComponent: () => import('./portfolio/portfolio').then((module) => module.Portfolio),
+        component: Portfolio,
       },
       {
         path: 'blog',
-        loadComponent: () => import('./blog/blog-list/blog-list').then((module) => module.BlogList),
+        component: BlogList,
       },
       {
         path: 'blog/:id',
-        loadComponent: () => import('./blog/blog-post/blog-post').then((module) => module.BlogPost),
+        component: BlogPost,
       },
     ],
   },
