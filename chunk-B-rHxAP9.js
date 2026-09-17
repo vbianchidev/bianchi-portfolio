@@ -1,1 +1,0 @@
-import{Ht as g,_ as Fi,lt as TI}from"./chunk-CyitSShL.js";import{t as L}from"./main-XFY3G642.js";var m=class i{localeService=g(L);transform(e,r=`mediumDate`){return e==null?``:TI(e,r,this.localeService.angularLocaleId())}static ɵfac=function(r){return new(r||i)};static ɵpipe=Fi({name:`buiDate`,type:i,pure:!1})};export{m as t};
