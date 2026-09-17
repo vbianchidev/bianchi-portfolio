@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-switch-theme',
@@ -7,12 +8,16 @@ import { Component, signal } from '@angular/core';
   templateUrl: './switch-theme.component.html',
   styleUrl: './switch-theme.component.scss',
 })
-export class SwitchThemeComponent {
-  protected readonly isDark = signal(document.documentElement.dataset['theme'] === 'dark');
+export class SwitchThemeComponent implements OnInit {
+  private readonly themeService = inject(ThemeService);
+
+  protected readonly isDark = this.themeService.isDark;
+
+  public ngOnInit(): void {
+    this.themeService.init();
+  }
 
   protected toggle(): void {
-    const newTheme = this.isDark();
-    this.isDark.set(!newTheme);
-    document.documentElement.dataset['theme'] = newTheme ? 'dark' : 'light';
+    this.themeService.toggle();
   }
 }
