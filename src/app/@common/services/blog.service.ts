@@ -8,11 +8,11 @@ export class BlogService {
   private readonly http = inject(HttpClient);
 
   public getPosts(): Observable<ReadonlyArray<BlogPost>> {
-    return this.http.get<ReadonlyArray<BlogPost>>('/blog/posts.json');
+    return this.http.get<ReadonlyArray<BlogPost>>('./blog/posts.json');
   }
 
   public getPostContent(post: BlogPost): Observable<string> {
-    return this.http.get(`/blog/${post.file}`, { responseType: 'text' });
+    return this.http.get(`./blog/${post.file}`, { responseType: 'text' });
   }
 
   public getPostById(id: string): Observable<BlogPost> {
