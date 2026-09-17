@@ -15,9 +15,9 @@ export class NavbarComponent {
   protected readonly menuOpen = signal(false);
 
   protected readonly navbarItems = [
-    { label: this.translate.instant('Home'), href: '/' },
-    { label: this.translate.instant('About'), href: '/about' },
-    { label: this.translate.instant('Portfolio'), href: '/portfolio' },
-    { label: this.translate.instant('Blog'), href: '/blog' },
+    { label: this.translate.instant('COMMON.HOME'), href: '/' },
+    { label: this.translate.instant('COMMON.ABOUT'), href: '/about' },
+    { label: this.translate.instant('COMMON.PORTFOLIO'), href: '/portfolio' },
+    { label: this.translate.instant('COMMON.BLOG'), href: '/blog' },
   ];
 }

@@ -7,7 +7,7 @@
     <nav class="navbar__desktop">
       @for (item of navbarItems; track $index) {
         <a
-          class="bui-button primary"
+          class="bui-link primary"
           [routerLink]="item.href"
           [routerLinkActive]="'active'"
           [routerLinkActiveOptions]="{ exact: true }"

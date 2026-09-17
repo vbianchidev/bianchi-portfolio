@@ -1,9 +1,15 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import {
+  ApplicationConfig,
+  inject,
+  provideAppInitializer,
+  provideBrowserGlobalErrorListeners,
+} from '@angular/core';
 import { provideRouter, withViewTransitions } from '@angular/router';
 
 import { provideHttpClient } from '@angular/common/http';
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LocaleService } from './@common/services/localization.service';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -16,8 +22,9 @@ export const appConfig: ApplicationConfig = {
         prefix: '/i18n/',
         suffix: '.json',
       }),
-      fallbackLang: 'pt',
-      lang: 'pt',
+      fallbackLang: 'pt-br',
+      lang: 'pt-br',
     }),
+    provideAppInitializer(() => inject(LocaleService).init()),
   ],
 };

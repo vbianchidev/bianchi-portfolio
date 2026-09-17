@@ -3,7 +3,11 @@
     "NAME": "Nome",
     "AGE": "Idade",
     "EMAIL": "Email",
-    "PHONE": "Telefone"
+    "PHONE": "Telefone",
+    "HOME": "Início",
+    "ABOUT": "Sobre",
+    "PORTFOLIO": "Portfólio",
+    "BLOG": "Blog"
   },
 
   "HOME": {
