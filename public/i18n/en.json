@@ -1,6 +1,153 @@
 {
+  "COMMON": {
+    "NAME": "Name",
+    "AGE": "Age",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "HOME": "Home",
+    "ABOUT": "About",
+    "PORTFOLIO": "Portfolio",
+    "BLOG": "Blog"
+  },
+
   "HOME": {
     "TITLE": "I'm Vitor Bianchi",
     "SUBTITLE": "Frontend Software Engineer."
+  },
+
+  "ABOUT": {
+    "TITLE": "About",
+    "SUBTITLE": "A little about my journey."
+  },
+
+  "ABOUT-EXPERIENCE": {
+    "TITLE": "Explore my journey <br /> as a developer.",
+    "SECTION-NAME": "Experience",
+    "EXPERIENCES": [
+      {
+        "company": "Frontend Developer (Angular)",
+        "role": "Selbetti Tecnologia",
+        "startDate": "06-01-2024",
+        "endDate": "06-01-2026"
+      },
+      {
+        "company": "Frontend Developer (Angular)",
+        "role": "Informa Solutions",
+        "startDate": "04-01-2022",
+        "endDate": "06-01-2024"
+      },
+      {
+        "company": "Fullstack Developer (.NET / Angular)",
+        "role": "Integrativa",
+        "startDate": "06-01-2021",
+        "endDate": "04-01-2022"
+      },
+      {
+        "company": "Fullstack Developer (PHP)",
+        "role": "Maquina Web",
+        "startDate": "10-01-2018",
+        "endDate": "06-01-2021"
+      }
+    ]
+  },
+
+  "ABOUT-EDUCATION": {
+    "TITLE": "Knowledge that <br /> supports practice.",
+    "SECTION-NAME": "Education",
+    "EDUCATIONS": [
+      {
+        "degree": "Postgraduate Degree (Lato Sensu) in Software Engineering with Emphasis on Quality and Software Testing",
+        "institution": "Anhanguera Educacional",
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
+      },
+      {
+        "degree": "Postgraduate Degree (Lato Sensu) in Software Architecture",
+        "institution": "Anhanguera Educacional",
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
+      },
+      {
+        "degree": "Associate Degree in Systems Analysis and Development",
+        "institution": "Federal Institute of Education, Science and Technology of São Paulo",
+        "startDate": "01-01-2017",
+        "endDate": "12-01-2021"
+      },
+      {
+        "degree": "Integrated Technical Course in Computer Networks",
+        "institution": "Federal Institute of Education, Science and Technology of São Paulo",
+        "startDate": "01-01-2014",
+        "endDate": "12-01-2016"
+      }
+    ]
+  },
+
+  "ABOUT-ME": {
+    "TITLE": "Get to know a little <br /> about me.",
+    "SECTION-NAME": "About me",
+    "BIO": "Hello, my name is Vitor Bianchi da Silva. I'm a Frontend Developer with over 7 years of experience building scalable, high-impact software solutions for companies in the Brazilian and international markets, specializing in the Angular ecosystem.",
+    "CONTACT": {
+      "NAME": "Vitor Bianchi da Silva",
+      "AGE": "27 Years old",
+      "EMAIL": "vitor.biansil@gmail.com",
+      "PHONE": "+55 (17) 99781-7534"
+    }
+  },
+
+  "ABOUT-SKILLS": {
+    "TITLE": "A bit of my <br /> technical skills.",
+    "SECTION-NAME": "Technical Skills",
+    "SKILLS": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Node.JS",
+      "RxJS",
+      "NgRX",
+      "NgXS",
+      "HTML/HTML5",
+      "CSS/CSS3",
+      "SASS",
+      "Jasmine",
+      "Jest",
+      "AWS",
+      "Azure",
+      "Figma"
+    ]
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "SUBTITLE": "Projects and experiences that turn ideas into products."
+  },
+
+  "PORTFOLIO-GITHUB": {
+    "TITLE": "Repositories that reflect <br /> my development practice.",
+    "SECTION-NAME": "GitHub",
+    "LOADING": "Loading repositories...",
+    "ERROR": "Unable to load repositories at this time.",
+    "EMPTY": "No public repositories found.",
+    "NO-DESCRIPTION": "This repository has no description.",
+    "VIEW-REPOSITORY": "View repository",
+    "VIEW-PROJECT": "View project"
+  },
+
+  "PORTFOLIO-FIGMA": {
+    "TITLE": "Interfaces that combine <br /> clarity, intent, and experience.",
+    "SECTION-NAME": "Figma",
+    "EMPTY": "Figma projects will be available soon.",
+    "OPEN-FIGMA": "Open in Figma"
+  },
+
+  "BLOG": {
+    "TITLE": "Blog",
+    "SUBTITLE": "Explaining various topics.",
+    "ARTICLES": "Articles",
+    "LOADING": "Loading articles...",
+    "LOADING-ARTICLE": "Loading article...",
+    "ERROR": "Unable to load blog content at this time.",
+    "EMPTY": "No articles published yet.",
+    "READ-ARTICLE": "Read article",
+    "BACK-TO-LIST": "Back to articles"
   }
 }

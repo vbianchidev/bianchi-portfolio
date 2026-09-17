@@ -1,6 +1,153 @@
 {
+  "COMMON": {
+    "NAME": "Nombre",
+    "AGE": "Edad",
+    "EMAIL": "Correo electrónico",
+    "PHONE": "Teléfono",
+    "HOME": "Inicio",
+    "ABOUT": "Sobre mí",
+    "PORTFOLIO": "Portafolio",
+    "BLOG": "Blog"
+  },
+
   "HOME": {
     "TITLE": "Soy Vitor Bianchi",
     "SUBTITLE": "Ingeniero de Software Frontend."
+  },
+
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "SUBTITLE": "Un poco sobre mi trayectoria."
+  },
+
+  "ABOUT-EXPERIENCE": {
+    "TITLE": "Explora mi trayectoria <br /> como desarrollador.",
+    "SECTION-NAME": "Experiencia",
+    "EXPERIENCES": [
+      {
+        "company": "Desarrollador Frontend (Angular)",
+        "role": "Selbetti Tecnologia",
+        "startDate": "06-01-2024",
+        "endDate": "06-01-2026"
+      },
+      {
+        "company": "Desarrollador Frontend (Angular)",
+        "role": "Informa Solutions",
+        "startDate": "04-01-2022",
+        "endDate": "06-01-2024"
+      },
+      {
+        "company": "Desarrollador Fullstack (.NET / Angular)",
+        "role": "Integrativa",
+        "startDate": "06-01-2021",
+        "endDate": "04-01-2022"
+      },
+      {
+        "company": "Desarrollador Fullstack (PHP)",
+        "role": "Maquina Web",
+        "startDate": "10-01-2018",
+        "endDate": "06-01-2021"
+      }
+    ]
+  },
+
+  "ABOUT-EDUCATION": {
+    "TITLE": "Conocimiento que <br /> sustenta la práctica.",
+    "SECTION-NAME": "Formación",
+    "EDUCATIONS": [
+      {
+        "degree": "Posgrado Lato Sensu en Ingeniería de Software con Énfasis en Calidad y Pruebas de Software",
+        "institution": "Anhanguera Educacional",
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
+      },
+      {
+        "degree": "Posgrado Lato Sensu en Arquitectura de Software",
+        "institution": "Anhanguera Educacional",
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
+      },
+      {
+        "degree": "Tecnicatura Superior en Análisis y Desarrollo de Sistemas",
+        "institution": "Instituto Federal de Educación, Ciencia y Tecnología de São Paulo",
+        "startDate": "01-01-2017",
+        "endDate": "12-01-2021"
+      },
+      {
+        "degree": "Curso Técnico Integrado en Redes de Computadoras",
+        "institution": "Instituto Federal de Educación, Ciencia y Tecnología de São Paulo",
+        "startDate": "01-01-2014",
+        "endDate": "12-01-2016"
+      }
+    ]
+  },
+
+  "ABOUT-ME": {
+    "TITLE": "Conoce un poco <br /> sobre mí.",
+    "SECTION-NAME": "Sobre mí",
+    "BIO": "Hola, me llamo Vitor Bianchi da Silva. Soy Desarrollador Frontend con más de 7 años de experiencia en el desarrollo de soluciones de software escalables y de alto impacto para empresas del mercado brasileño e internacional, especializado en el ecosistema Angular.",
+    "CONTACT": {
+      "NAME": "Vitor Bianchi da Silva",
+      "AGE": "27 Años",
+      "EMAIL": "vitor.biansil@gmail.com",
+      "PHONE": "+55 (17) 99781-7534"
+    }
+  },
+
+  "ABOUT-SKILLS": {
+    "TITLE": "Un poco de mis <br /> habilidades técnicas.",
+    "SECTION-NAME": "Habilidades Técnicas",
+    "SKILLS": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Node.JS",
+      "RxJS",
+      "NgRX",
+      "NgXS",
+      "HTML/HTML5",
+      "CSS/CSS3",
+      "SASS",
+      "Jasmine",
+      "Jest",
+      "AWS",
+      "Azure",
+      "Figma"
+    ]
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portafolio",
+    "SUBTITLE": "Proyectos y experiencias que transforman ideas en productos."
+  },
+
+  "PORTFOLIO-GITHUB": {
+    "TITLE": "Repositorios que reflejan <br /> mi práctica en desarrollo.",
+    "SECTION-NAME": "GitHub",
+    "LOADING": "Cargando repositorios...",
+    "ERROR": "No se pudieron cargar los repositorios en este momento.",
+    "EMPTY": "No se encontraron repositorios públicos.",
+    "NO-DESCRIPTION": "Este repositorio no tiene descripción.",
+    "VIEW-REPOSITORY": "Ver repositorio",
+    "VIEW-PROJECT": "Ver proyecto"
+  },
+
+  "PORTFOLIO-FIGMA": {
+    "TITLE": "Interfaces que combinan <br /> claridad, intención y experiencia.",
+    "SECTION-NAME": "Figma",
+    "EMPTY": "Los proyectos de Figma estarán disponibles pronto.",
+    "OPEN-FIGMA": "Abrir en Figma"
+  },
+
+  "BLOG": {
+    "TITLE": "Blog",
+    "SUBTITLE": "Explicando diversos temas.",
+    "ARTICLES": "Artículos",
+    "LOADING": "Cargando artículos...",
+    "LOADING-ARTICLE": "Cargando artículo...",
+    "ERROR": "No se pudo cargar el contenido del blog en este momento.",
+    "EMPTY": "Aún no hay artículos publicados.",
+    "READ-ARTICLE": "Leer artículo",
+    "BACK-TO-LIST": "Volver a los artículos"
   }
 }
