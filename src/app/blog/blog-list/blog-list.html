@@ -12,7 +12,7 @@
     <div class="blog-list__posts">
       @for (post of posts(); track post.id) {
         <a class="bui-card blog-list__post" [routerLink]="['/blog', post.id]">
-          <span class="blog-list__date">{{ post.publishedAt | date: 'longDate' }}</span>
+          <span class="blog-list__date">{{ post.publishedAt | buiDate: 'longDate' }}</span>
           <h2>{{ post.title }}</h2>
           <p>{{ post.excerpt }}</p>
           <span class="blog-list__read-more">

@@ -11,8 +11,8 @@
         <strong>{{ experience.role }}</strong>
 
         <p class="date">
-          {{ experience.startDate | date: 'MMM yyyy' }} -
-          {{ experience.endDate | date: 'MMM yyyy' }}
+          {{ experience.startDate | buiDate: 'MMM yyyy' }} -
+          {{ experience.endDate | buiDate: 'MMM yyyy' }}
         </p>
         <p>{{ experience.description }}</p>
       </div>

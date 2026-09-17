@@ -5,7 +5,7 @@
     <p class="blog-post__message" role="alert">{{ 'BLOG.ERROR' | translate }}</p>
   } @else if (post(); as selectedPost) {
     <header class="blog-post__header">
-      <span>{{ selectedPost.publishedAt | date: 'longDate' }}</span>
+      <span>{{ selectedPost.publishedAt | buiDate: 'longDate' }}</span>
       <h1>{{ selectedPost.title }}</h1>
       <p>{{ selectedPost.excerpt }}</p>
     </header>

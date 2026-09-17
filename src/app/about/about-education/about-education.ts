@@ -1,14 +1,14 @@
-import { DatePipe } from '@angular/common';
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { SectionTitleComponent } from '../../@common/components/section-title/section-title.component';
+import { BuiDatePipe } from '../../@common/pipe/bui-date.pipe';
 import { Education } from '../../@common/types/education';
 
 @Component({
   selector: 'app-about-education',
   templateUrl: './about-education.html',
   styleUrls: ['./about-education.scss'],
-  imports: [SectionTitleComponent, TranslatePipe, DatePipe],
+  imports: [SectionTitleComponent, TranslatePipe, BuiDatePipe],
 })
 export class AboutEducation implements OnInit {
   private translate = inject(TranslateService);

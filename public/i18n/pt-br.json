@@ -27,26 +27,26 @@
       {
         "company": "Desenvolvedor Frontend (Angular)",
         "role": "Selbetti Tecnologia",
-        "startDate": "01-06-2024",
-        "endDate": "01-06-2026"
+        "startDate": "06-01-2024",
+        "endDate": "06-01-2026"
       },
       {
         "company": "Desenvolvedor Frontend (Angular)",
         "role": "Informa Solutions",
-        "startDate": "01-04-2022",
-        "endDate": "01-06-2024"
+        "startDate": "04-01-2022",
+        "endDate": "06-01-2024"
       },
       {
         "company": "Desenvolvedor Fullstack (.NET / Angular)",
         "role": "Integrativa",
-        "startDate": "01-06-2021",
-        "endDate": "01-04-2022"
+        "startDate": "06-01-2021",
+        "endDate": "04-01-2022"
       },
       {
         "company": "Desenvolvedor Fullstack (PHP)",
         "role": "Maquina Web",
-        "startDate": "01-10-2018",
-        "endDate": "01-06-2021"
+        "startDate": "10-01-2018",
+        "endDate": "06-01-2021"
       }
     ]
   },
@@ -58,26 +58,26 @@
       {
         "degree": "Pós-graduação Lato Sensu em Engenharia de Software com Ênfase em Qualidade e Teste de Software",
         "institution": "Anhanguera Educacional",
-        "startDate": "01-09-2023",
-        "endDate": "01-11-2022"
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
       },
       {
         "degree": "Pós-graduação Lato Sensu em Arquitetura de Software",
         "institution": "Anhanguera Educacional",
-        "startDate": "01-09-2023",
-        "endDate": "01-11-2022"
+        "startDate": "09-01-2023",
+        "endDate": "11-01-2022"
       },
       {
         "degree": "Curso Superior Tecnólogo de Análise e Desenvolvimento de Sistemas",
         "institution": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
         "startDate": "01-01-2017",
-        "endDate": "01-12-2021"
+        "endDate": "12-01-2021"
       },
       {
         "degree": "Curso Técnico Integrado de Redes de Computadores",
         "institution": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
         "startDate": "01-01-2014",
-        "endDate": "01-12-2016"
+        "endDate": "12-01-2016"
       }
     ]
   },
@@ -141,7 +141,7 @@
 
   "BLOG": {
     "TITLE": "Blog",
-    "SUBTITLE": "Notas sobre tecnologia, interfaces e construção de produtos.",
+    "SUBTITLE": "Explicando assuntos diversos.",
     "ARTICLES": "Artigos",
     "LOADING": "Carregando artigos...",
     "LOADING-ARTICLE": "Carregando artigo...",

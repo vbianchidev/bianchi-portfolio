@@ -1,16 +1,16 @@
-import { DatePipe } from '@angular/common';
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { BuiTypewriter } from '@bianchi-ui';
 import { TranslatePipe } from '@ngx-translate/core';
+import { BuiDatePipe } from '../../@common/pipe/bui-date.pipe';
 import { BlogService } from '../../@common/services/blog.service';
 import { BlogPost } from '../../@common/types';
 
 @Component({
   templateUrl: './blog-list.html',
   styleUrl: './blog-list.scss',
-  imports: [BuiTypewriter, DatePipe, RouterLink, TranslatePipe],
+  imports: [BuiTypewriter, BuiDatePipe, RouterLink, TranslatePipe],
 })
 export class BlogList {
   private readonly blogService = inject(BlogService);

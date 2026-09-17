@@ -1,9 +1,9 @@
-import { DatePipe } from '@angular/common';
 import { Component, DestroyRef, inject, signal, ViewEncapsulation } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { forkJoin, map, of, switchMap, tap } from 'rxjs';
+import { BuiDatePipe } from '../../@common/pipe/bui-date.pipe';
 import { BlogService } from '../../@common/services/blog.service';
 import { MarkdownRendererService } from '../../@common/services/markdown-renderer.service';
 import { BlogPost as BlogPostModel } from '../../@common/types';
@@ -11,7 +11,7 @@ import { BlogPost as BlogPostModel } from '../../@common/types';
 @Component({
   templateUrl: './blog-post.html',
   styleUrl: './blog-post.scss',
-  imports: [DatePipe, RouterLink, TranslatePipe],
+  imports: [BuiDatePipe, RouterLink, TranslatePipe],
   encapsulation: ViewEncapsulation.None,
 })
 export class BlogPost {
